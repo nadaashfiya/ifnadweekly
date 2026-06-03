@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Portofolio Qothrunnada Ashfiya</title>
+
+```
+<!-- Hubungkan CSS -->
+<link rel="stylesheet" href="style.css">
+```
+
+</head>
+<body>
+
+```
+<!-- HEADER -->
+<h1>WEB INFORMATIKA</h1>
+
+<hr>
+
+<!-- NAVBAR -->
+<table class="navbar">
+    <tr>
+        <td><a href="index.php">Home</a></td>
+        <td><a href="profile.php">Profile</a></td>
+        <td><a href="contact.php">Kontak</a></td>
+        <td><a href="DataMahasiswa.php">Data Mahasiswa</a></td>
+    </tr>
+</table>
+
+<!-- KONTEN UTAMA -->
+<h2>Sambutan Kaprodi</h2>
+
+<img src="assets/images/FOTO NADA JAS UNIMUS.png"
+     alt="Foto Kaprodi">
+
+<p>
+    <b>Nama :</b> Qothrunnada Ashfiya, S.Kom., M.Kom.<br>
+    <b>Jabatan :</b> Ketua Program Studi Informatika<br><br>
+
+    Selamat datang di Website Informatika.
+    Website ini dibuat sebagai media informasi, pembelajaran,
+    dan dokumentasi kegiatan mahasiswa Informatika.
+    Semoga website ini dapat memberikan manfaat dan menjadi
+    sarana komunikasi yang baik antara mahasiswa dan dosen.
+</p>
+
+<h3>Visi Program Studi</h3>
+
+<p>
+    Menjadi Program Studi Informatika yang unggul dalam bidang
+    teknologi informasi, inovatif, berdaya saing global,
+    serta menghasilkan lulusan yang profesional dan berakhlak mulia.
+</p>
+
+<h3>Daftar Publikasi</h3>
+
+<ul>
+    <li>Scopus
+        <ul>
+            <li>Sentiment Analysis pada Media Sosial</li>
+            <li>Machine Learning untuk Prediksi Data</li>
+        </ul>
+    </li>
+
+    <li>Web of Science (WoS)</li>
+
+    <li>SINTA
+        <ul>
+            <li>Sistem Informasi Akademik</li>
+            <li>Pengembangan Aplikasi Mobile</li>
+        </ul>
+    </li>
+</ul>
+
+<hr>
+
+<h3>Informasi Singkat</h3>
+
+<table class="mahasiswa">
+    <tr>
+        <th>Fakultas</th>
+        <th>Program Studi</th>
+        <th>Akreditasi</th>
+    </tr>
+
+    <tr>
+        <td>FTIK</td>
+        <td>Informatika</td>
+        <td>Baik Sekali</td>
+    </tr>
+</table>
+```
+
+</body>
+</html>

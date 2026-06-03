@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Qothrunnada Ashfiya</title>
+
+```
+<!-- Hubungkan CSS -->
+<link rel="stylesheet" href="style.css">
+```
+
+</head>
+<body>
+
+```
+<!-- HEADER -->
+<h1>Portofolio Qothrunnada Ashfiya</h1>
+
+<hr>
+
+<!-- NAVBAR -->
+<table class="navbar">
+    <tr>
+        <td><a href="index.php">Home</a></td>
+        <td><a href="profile.php">Profile</a></td>
+        <td><a href="contact.php">Kontak</a></td>
+        <td><a href="DataMahasiswa.php">Data Mahasiswa</a></td>
+    </tr>
+</table>
+
+<!-- JUDUL -->
+<h2>Profil Mahasiswa</h2>
+
+<!-- FOTO -->
+<center>
+    <img src="assets/images/FOTO NADA JAS UNIMUS.png"
+         alt="Foto Profil">
+</center>
+
+<br>
+
+<!-- DATA DIRI -->
+<table class="mahasiswa">
+    <tr>
+        <th colspan="2">Data Diri</th>
+    </tr>
+
+    <tr>
+        <td><b>Nama Lengkap</b></td>
+        <td>Qothrunnada Ashfiya</td>
+    </tr>
+
+    <tr>
+        <td><b>NIM</b></td>
+        <td>13182420029</td>
+    </tr>
+
+    <tr>
+        <td><b>Program Studi</b></td>
+        <td>Informatika</td>
+    </tr>
+
+    <tr>
+        <td><b>Fakultas</b></td>
+        <td>FTIK</td>
+    </tr>
+
+    <tr>
+        <td><b>Universitas</b></td>
+        <td>Universitas Muhammadiyah Semarang</td>
+    </tr>
+
+    <tr>
+        <td><b>Email</b></td>
+        <td>qothrunnada@example.com</td>
+    </tr>
+</table>
+
+<br>
+
+<!-- TENTANG SAYA -->
+<h3>Tentang Saya</h3>
+
+<p>
+    Saya adalah mahasiswa Program Studi Informatika yang memiliki
+    minat pada bidang Web Development, UI/UX Design, Internet of Things (IoT),
+    dan Data Science. Saya senang mempelajari teknologi baru serta
+    mengembangkan berbagai proyek yang dapat memberikan manfaat bagi masyarakat.
+</p>
+
+<!-- KEAHLIAN -->
+<h3>Keahlian</h3>
+
+<ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>PHP</li>
+    <li>MySQL</li>
+    <li>Arduino & IoT</li>
+    <li>Microsoft Office</li>
+</ul>
+
+<!-- HOBI -->
+<h3>Hobi</h3>
+
+<ul>
+    <li>Membaca</li>
+    <li>Menulis</li>
+    <li>Desain Grafis</li>
+    <li>Fotografi</li>
+    <li>Belajar Teknologi Baru</li>
+</ul>
+
+<hr>
+
+<p align="center">
+    © 2025 Portofolio Qothrunnada Ashfiya
+</p>
+```
+
+</body>
+</html>
