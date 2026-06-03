@@ -23,10 +23,10 @@
 <!-- NAVBAR -->
 <table class="navbar">
     <tr>
-        <td><a href="index.html">Home</a></td>
-        <td><a href="profile.html">Profile</a></td>
-        <td><a href="contact.html">Kontak</a></td>
-        <td><a href="DataMahasiswa.html">Data Mahasiswa</a></td>
+        <td><a href="index.php">Home</a></td>
+        <td><a href="profile.php">Profile</a></td>
+        <td><a href="contact.php">Kontak</a></td>
+        <td><a href="DataMahasiswa.php">Data Mahasiswa</a></td>
     </tr>
 </table>
 
