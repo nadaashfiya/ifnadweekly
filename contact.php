@@ -1,22 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-   <h1>WEB INFORMATIKA</h1>
-    <hr>
-    <table border="1" cellspacing="0" cellpadding"10px">
-        <tr>
-            <td>
-                <a href="index.php">Home</a>
-            </td>
-            <td><a href="profile.php">Profile</a></td>
-            <td><a href="contact.php">Contact</a></td>
-            <td>Data Mahasiswa</td>
-        </tr>
-    </table>
-</body>
-</html>
+<?php
+include 'koneksi.php';
+?>
+
+<h2>Contact Mahasiswa</h2>
+
+<table border="1" cellpadding="10">
+    <tr>
+        <th>No</th>
+        <th>Nama</th>
+        <th>Email</th>
+        <th>No HP</th>
+    </tr>
+
+    <?php
+    $query = mysqli_query($koneksi, "SELECT * FROM mahasiswa");
+    $no = 1;
+
+    while($data = mysqli_fetch_assoc($query)){
+    ?>
+    <tr>
+        <td><?= $no++; ?></td>
+        <td><?= $data['nama']; ?></td>
+        <td><?= $data['email']; ?></td>
+        <td><?= $data['no_hp']; ?></td>
+    </tr>
+    <?php } ?>
+
+</table>

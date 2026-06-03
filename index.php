@@ -33,8 +33,7 @@
 <!-- KONTEN UTAMA -->
 <h2>Sambutan Kaprodi</h2>
 
-<img src="assets/images/FOTO NADA JAS UNIMUS.png"
-     alt="Foto Kaprodi">
+<img src="assets/images/nada_blue.jpg" width="300">
 
 <p>
     <b>Nama :</b> Qothrunnada Ashfiya, S.Kom., M.Kom.<br>

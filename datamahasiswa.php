@@ -1,3 +1,7 @@
+<?php
+include 'koneksi.php';
+?>
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -5,110 +9,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Mahasiswa</title>
 
-    <!-- Hubungkan CSS -->
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1, h2{
+            text-align: center;
+        }
+
+        .navbar{
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        .navbar td{
+            border: 1px solid #ccc;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .navbar a{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .btn{
+            display: inline-block;
+            padding: 10px 15px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover{
+            background: #0056b3;
+        }
+
+        .mahasiswa{
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .mahasiswa th,
+        .mahasiswa td{
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .mahasiswa th{
+            background: #f2f2f2;
+        }
+
+        .foto-mahasiswa{
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    </style>
 </head>
+
 <body>
 
-    <!-- HEADER -->
-    <h1>Portofolio Qothrunnada Ashfiya</h1>
+<h1>Portofolio Qothrunnada Ashfiya</h1>
 
-    <hr>
+<hr>
 
-    <!-- NAVBAR -->
-    <table class="navbar">
-        <tr>
-            <td><a href="index.php">Home</a></td>
-            <td><a href="profile.php">Profile</a></td>
-            <td><a href="contact.php">Kontak</a></td>
-            <td><a href="DataMahasiswa.php">Data Mahasiswa</a></td>
-        </tr>
-    </table>
+<table class="navbar">
+    <tr>
+        <td><a href="index.php">Home</a></td>
+        <td><a href="profile.php">Profile</a></td>
+        <td><a href="contact.php">Kontak</a></td>
+        <td><a href="DataMahasiswa.php">Data Mahasiswa</a></td>
+    </tr>
+</table>
 
-    <!-- JUDUL -->
-    <h2>Data Mahasiswa</h2>
+<h2>Data Mahasiswa</h2>
 
-    <!-- BUTTON -->
-    <a href="Inputdata.php">
-        <button>+ Tambah Data Mahasiswa</button>
-    </a>
+<a href="Inputdata.php" class="btn">+ Tambah Data Mahasiswa</a>
 
-    <br><br>
+<table class="mahasiswa">
+    <tr>
+        <th>No</th>
+        <th>Nama</th>
+        <th>NIM</th>
+        <th>Jurusan</th>
+        <th>Email</th>
+        <th>No HP</th>
+        <th>Foto</th>
+    </tr>
 
-    <!-- TABEL DATA MAHASISWA -->
-    <table class="mahasiswa">
+    <?php
+    $query = mysqli_query($koneksi, "SELECT * FROM mahasiswa");
+    $no = 1;
 
-        <tr>
-            <th rowspan="2">No</th>
-            <th rowspan="2">Nama</th>
-            <th rowspan="2">NIM</th>
-            <th rowspan="2">Foto</th>
-            <th colspan="3">Nilai</th>
-        </tr>
+    while($data = mysqli_fetch_assoc($query)){
+    ?>
+    <tr>
+        <td><?= $no++; ?></td>
+        <td><?= $data['nama']; ?></td>
+        <td><?= $data['nim']; ?></td>
+        <td><?= $data['jurusan']; ?></td>
+        <td><?= $data['email']; ?></td>
+        <td><?= $data['no_hp']; ?></td>
 
-        <tr>
-            <th>UTS</th>
-            <th>UAS</th>
-            <th>TUGAS</th>
-        </tr>
+        <td>
+            <?= $data['foto']; ?><br>
+            <img src="assets/images/<?= $data['foto']; ?>" class="foto-mahasiswa">
+        </td>
+    </tr>
+    <?php } ?>
 
-        <tr>
-            <td>1</td>
-            <td>Qothrunnada Ashfiya</td>
-            <td>13182420029</td>
-            <td>
-                <img src="assets/images/FOTO NADA JAS UNIMUS.png" alt="Foto Nada">
-            </td>
-            <td>85</td>
-            <td>88</td>
-            <td>100</td>
-        </tr>
-
-        <tr>
-            <td>2</td>
-            <td>Ashfiya Qothrunnada</td>
-            <td>1000000014</td>
-            <td>
-                <img src="assets/images/foto almet bg merah.png" alt="Foto Ashfiya">
-            </td>
-            <td>90</td>
-            <td>92</td>
-            <td>95</td>
-        </tr>
-
-    </table>
-
-    <hr>
-
-    <!-- LATIHAN -->
-    <h3>Latihan</h3>
-
-    <table class="latihan">
-        <tr>
-            <td>1,1</td>
-            <td>1,2</td>
-            <td>1,3</td>
-            <td>1,4</td>
-        </tr>
-
-        <tr>
-            <td>2,1</td>
-            <td colspan="2" rowspan="2" align="center">?</td>
-            <td>2,4</td>
-        </tr>
-
-        <tr>
-            <td>3,1</td>
-            <td>3,4</td>
-        </tr>
-
-        <tr>
-            <td>4,1</td>
-            <td>4,2</td>
-            <td>4,3</td>
-            <td>4,4</td>
-        </tr>
-    </table>
+</table>
 
 </body>
 </html>

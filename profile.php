@@ -35,8 +35,7 @@
 
 <!-- FOTO -->
 <center>
-    <img src="assets/images/FOTO NADA JAS UNIMUS.png"
-         alt="Foto Profil">
+    <img src="assets/images/nada_blue.jpg" alt="Foto Profil" width="300">
 </center>
 
 <br>
